@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "api")
-//http://localhost:8080/api/hello
+//http://localhost:6800/api/hello
 public class HelloController {
 
-    @CrossOrigin(origins = "http://ttt1804.id.vn:6800")
+    @CrossOrigin(origins = "http://34.143.247.201:80")
     @GetMapping("/hello")
     public String hello() {
         return "Hello world";
